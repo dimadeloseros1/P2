@@ -1,0 +1,25 @@
+
+img{
+  width: 250px;
+  height: 150px;
+  border-radius: 20px 20px 5px;
+}
+.mymain{
+  display: flex;
+}
+
+.mysecondmain{
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-end;
+}
+.maincombination{
+    background-color: rgb(10, 233, 166);
+    margin: 20px;
+    padding: 30px;
+    border-radius: 15px;
+}
+
+.maincontainer{
+  display: flex;
+}
