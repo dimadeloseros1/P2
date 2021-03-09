@@ -22,4 +22,5 @@ img{
 
 .maincontainer{
   display: flex;
+  background-color: indianred;
 }
