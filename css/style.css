@@ -1,14 +1,18 @@
 *{
   font-family: arial, sans-serif;
+  
 }
- 
+body{
+  margin-left: 1em;
+}
+
  .headeRR{
   
   display: flex;
   justify-content: space-between;
   font-size: 20px;
  } 
- header li{
+ .headeRR li{
    list-style: none;
    display: inline-block;
  }
@@ -37,13 +41,13 @@ header h1{
   background: linear-gradient(to right, #8f8154, #e2bdbd);
   background-clip: text;
   -webkit-text-fill-color: transparent;
-
-
 }
 
 
 .navbar{
   display: flex;
+  gap: 0px;
+  
   
 }
 #icon{
@@ -51,9 +55,6 @@ header h1{
   font-size: 15px;
   padding: 8px;
   border-radius: 10px 0 0 10px;
-}
-#first{
-  background-color: rgb(141, 70, 158);
 }
 
 #text{
@@ -69,20 +70,28 @@ header h1{
   border-radius: 0 10px 10px 0;
 }
 
-.nav2{
- display: flex;
- j
-}
+
 a{
   text-decoration: none;
   
 }
 .nav2 div{
- background-color: rgb(196, 221, 221);
+ border: outset;
+ border-color: darkkhaki;
+ color: rgb(102, 102, 223);
+ border-radius: 10px;
  font-size: 16px;
  padding: 10px;
- margin: auto;
- border-radius: 15px;
+}
+.nav2{
+  display: grid;
+  grid-template:repeat(5, 50px);
+  display: inline-flex;
+  grid-gap: 20px;
+}
+.nav2 a{
+  color: rgba(82, 70, 70, 0.781);
+  font-weight: 600;
 }
 
 
@@ -96,41 +105,83 @@ a{
   
 }
 
-  
-  
-img{
-  width: 250px;
+/* boxes+images */
+
+
+
+.boxes{
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  display: inline-flex;
+}
+
+.box{
+  background:rgb(247, 237, 247);
+  text-align: center;
+  padding: 1.5rem 2rem;
+  margin: 20px;
+  border-radius: 20px;
+}
+
+.box img{
   height: 150px;
-  border-radius: 20px 20px 5px;
+  width: 250px;
+  margin: -15px;
+  border-radius: 20px 20px 0 0;
 }
 
-.mymain{
-  display: flex;
+.boxes2 img{
+  height: 120px;
+  width: 175px;
+  margin: -15px;
+}
+.boxes2{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 20px;
+  display: inline-block;
+  box-sizing: content-box;
+  width: 400px;
   
-  padding: 20px;
 }
-.mymain2{
- display: flex;
+
+.box2{
+  background: rgb(247, 237, 247); 
+  text-align: center;
+  padding: 1.5rem 2rem;
+  margin: 20px;
+  border-radius: 20px;
 }
 
 
 
-.mysecondmain{
-   display: flex;
-   flex-direction: column;
-   justify-content: flex-end;
-   align-content: flex-end;
-}
+
+
+  
 .maincombination{
-    background-color: rgb(230, 233, 212);
-    margin: 20px;
-    padding: 30px;
+    
+    background-color: rgb(229, 233, 211);
+    margin: 10px;
+    padding: 20px;
     border-radius: 15px;
+    margin-right: 10rem;
+}
+.maincombination2{
+    
+    background-color: rgb(229, 233, 211);
+    margin: 10px;
+    padding: 10px;
+    border-radius: 15px;
+    
+    
+    
 }
 
 .maincontainer{
   display: flex;
+  margin-left: -20px;
+  padding: 10px;
   
-  padding: 20px;
   
 }
