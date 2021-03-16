@@ -81,20 +81,36 @@ a{
 }
 
 .nav2{
-  display: grid;
-  grid-template:repeat(5, 50px);
-  display: inline-flex;
-  grid-gap: 20px;
  
+  display: inline-flex;
+}
+.nav2 i{
+  font-size: 1.5rem;
 }
 
+
+
 .nav2 div{
-  border: outset;
+  border: solid;
   border-color: darkkhaki;
   color: rgb(102, 102, 223);
-  border-radius: 10px;
+  border-radius: 15px;
   font-size: 16px;
-  padding: 10px;
+  padding: 0;
+  width: 200px;
+  margin: 5px;
+}
+
+.nav2 .fas{
+
+  background-color: rgb(212, 240, 240);
+  border-radius: 15px;
+  padding: 5px;
+  height: 2rem;
+  width: 2rem;
+  justify-content: center;
+  align-items:center;
+  display: inline-flex;
 }
 
  
@@ -132,8 +148,16 @@ a{
   text-align: center;
   padding: 1.5rem 2rem;
   margin: 20px;
-  border-radius: 20px; 0, 0, 0.19);
+  border-radius: 20px 0, 0, 0.19;
+  transition: box-shadow 0.5s;
   
+}
+.box:hover{
+  box-shadow: 4px 4px 4px teal;
+
+  
+
+
 }
 
 .box img{
