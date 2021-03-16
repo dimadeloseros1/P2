@@ -52,21 +52,25 @@ header h1{
 }
 #icon{
   background-color: rgb(215, 221, 216);
-  font-size: 15px;
+  font-size: 13px;
   padding: 8px;
   border-radius: 10px 0 0 10px;
 }
 
 #text{
   font-size: 20px;
+  border-style: solid;
 }
 #button{
   background-color: blue;
   display: grid;
   grid-template-columns: 60px;
   color: white;
-  font-size: 15px;
-  padding: 4px;
+  height: 28px;
+  width:100%;
+  font-size: 13px;
+  padding: 5px;
+  border-style: none;
   border-radius: 0 10px 10px 0;
 }
 
@@ -75,24 +79,27 @@ a{
   text-decoration: none;
   
 }
-.nav2 div{
- border: outset;
- border-color: darkkhaki;
- color: rgb(102, 102, 223);
- border-radius: 10px;
- font-size: 16px;
- padding: 10px;
-}
+
 .nav2{
   display: grid;
   grid-template:repeat(5, 50px);
   display: inline-flex;
   grid-gap: 20px;
+ 
 }
-.nav2 a{
-  color: rgba(82, 70, 70, 0.781);
-  font-weight: 600;
+
+.nav2 div{
+  border: outset;
+  border-color: darkkhaki;
+  color: rgb(102, 102, 223);
+  border-radius: 10px;
+  font-size: 16px;
+  padding: 10px;
 }
+
+ 
+ 
+
 
 
 
@@ -100,6 +107,9 @@ a{
   background-color: rgb(192, 189, 189);
   font-size: 15px;
   padding: 7px;
+  width: auto;
+  height: 100%;
+  justify-content: center;
   border-radius: 40px;
   color: blue;
   
@@ -114,14 +124,16 @@ a{
   grid-gap: 20px;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   display: inline-flex;
+  
 }
 
 .box{
-  background:rgb(247, 237, 247);
+  background:rgb(253, 253, 253);
   text-align: center;
   padding: 1.5rem 2rem;
   margin: 20px;
-  border-radius: 20px;
+  border-radius: 20px; 0, 0, 0.19);
+  
 }
 
 .box img{
