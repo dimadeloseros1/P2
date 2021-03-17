@@ -62,7 +62,7 @@ header h1{
   border-style: solid;
 }
 #button{
-  background-color: blue;
+  background-color: rgb(59, 59, 247);
   display: grid;
   grid-template-columns: 60px;
   color: white;
@@ -81,56 +81,56 @@ a{
 }
 
 .nav2{
- 
   display: inline-flex;
-  
+}
+.nav2 p{
+  font-weight: 600;
+  margin-top: 30px;
 }
 .nav2 i{
-  font-size: 1.5rem;
+  font-size: 1.2rem;
+  color: rgb(63, 63, 238);
 }
-
 
 
 .nav2 div{
   border: solid;
-  border-color: darkkhaki;
-  color: rgb(102, 102, 223);
-  border-radius: 15px;
-  font-size: 16px;
+  border-width: 2px;
+  border-radius: 20px;
+  border-color: rgb(235, 240, 239);
   padding: 0;
-  width: 200px;
-  margin: 5px;
+  width: 175px;
+  margin: 20px;
 }
 
 .nav2 .fas{
 
-  background-color: rgb(212, 240, 240);
+  background-color: rgb(223, 225, 235);
   border-radius: 15px;
-  padding: 5px;
+  padding: 3px;
   height: 2rem;
   width: 2rem;
   justify-content: center;
   align-items:center;
   display: inline-flex;
+  white-space: nowrap;
 }
 
- 
- 
 
 
 
 
-#info{
-  background-color: rgb(192, 189, 189);
-  font-size: 15px;
+.fa-info{
+  background-color: rgb(241, 236, 212);
   padding: 7px;
-  width: auto;
-  height: 100%;
-  justify-content: center;
-  border-radius: 40px;
-  color: blue;
-  
+  border-radius: 20px; 
 }
+.info i{
+  color: rgb(54, 54, 241);
+}
+
+
+
 
 /* boxes+images */
 
@@ -142,30 +142,35 @@ a{
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   display: inline-flex;
   
+  
 }
 
 .box{
-  background:rgb(253, 253, 253);
-  text-align: center;
+  background:rgb(253, 251, 251);
+  text-align: left;
   padding: 1.5rem 2rem;
+  height: 13rem;
   margin: 20px;
-  border-radius: 20px 0, 0, 0.19;
-  transition: box-shadow 0.5s;
+  border-radius: 20px;
+  box-shadow: 1px 2px 1px #796e6e;
   
 }
-.box:hover{
-  box-shadow: 4px 4px 4px teal;
+.box p{
+  margin-bottom: 0px;
+}
+
 
   
 
 
-}
+
 
 .box img{
   height: 150px;
   width: 250px;
   margin: -15px;
   border-radius: 20px 20px 0 0;
+  
 }
 
 .boxes2 img{
@@ -179,16 +184,20 @@ a{
   grid-gap: 20px;
   display: inline-block;
   box-sizing: content-box;
-  width: 400px;
+  width: 350px;
   
 }
 
 .box2{
-  background: rgb(247, 237, 247); 
+  background: rgb(253, 251, 251); 
   text-align: center;
-  padding: 1.5rem 2rem;
+  
+  padding: 20px;
   margin: 20px;
-  border-radius: 20px;
+  border-radius: 40px;
+}
+.fa-star {
+  color: rgb(69, 69, 226);
 }
 
 
@@ -198,7 +207,7 @@ a{
   
 .maincombination{
     
-    background-color: rgb(229, 233, 211);
+    background-color: rgb(235, 235, 235);
     margin: 10px;
     padding: 20px;
     border-radius: 15px;
@@ -206,13 +215,18 @@ a{
 }
 .maincombination2{
     
-    background-color: rgb(229, 233, 211);
+    background-color: rgb(235, 235, 235);
     margin: 10px;
     padding: 10px;
     border-radius: 15px;
-    
-    
-    
+}
+.mp{
+  display: flex;
+  justify-content: space-around;
+}
+.mp i{
+  margin-top: 20px;
+  font-size: 20px;
 }
 
 .maincontainer{
