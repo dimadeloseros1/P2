@@ -157,9 +157,10 @@ a{
 
 .boxes{
   display: grid;
-  grid-gap: 20px;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  display: inline-flex;
+  grid-template: repeat(2, 1fr) / repeat(3, 1fr);
+  
+  
+ 
   
   
 }
@@ -265,13 +266,48 @@ a{
   display: flex;
   margin-left: -20px;
   padding: 10px;
-  
+}
+
+.activities{
+  display: grid;
+  grid-template: repeat(2, 1fr) / repeat(4, 1fr);
   
 }
 
+.boxes3 {
+  background: rgb(255, 255, 255);
+  padding: 10px;
+  margin: 20px;
+  border-radius: 15px;
+  border: unset;
+  text-align: center;
+  box-shadow: 1px 0px 1px 1px;
+  
+}
+.boxes3 p{
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+
+.footer{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: space-between;
+}
+
+footer{
+  background: rgb(243, 237, 225);
+}
+
+  
+
+
+
+
 /* Media Q */
 
-@media screen and (max-width: 1440px) {
+@media screen and (max-width: 1439px) {
 
   .nav2{
     display: inline-block;
