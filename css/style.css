@@ -226,7 +226,12 @@ a{
 }
 
 .fa-star {
-  color: rgb(69, 69, 226);
+  color: rgb(240, 221, 221);
+  
+}
+.fa-star.checked {
+  color: rgb(52, 52, 236);
+  
 }
 
 
@@ -268,10 +273,19 @@ a{
   padding: 10px;
 }
 
+
+
 .activities{
   display: grid;
   grid-template: repeat(2, 1fr) / repeat(4, 1fr);
-  
+}
+.activities img{
+  width: 100%;
+  height: 90%;
+}
+ .boxes3{
+  width: 80%;
+  height: 50%;
 }
 
 .boxes3 {
@@ -282,8 +296,18 @@ a{
   border: unset;
   text-align: center;
   box-shadow: 1px 0px 1px 1px;
-  
 }
+.boxes4{
+  background: rgb(255, 255, 255);
+  padding: 10px;
+  margin: 20px;
+  border-radius: 15px;
+  border: unset;
+  text-align: center;
+  box-shadow: 1px 0px 1px 1px;
+
+}
+
 .boxes3 p{
   font-weight: 600;
   font-size: 1.2rem;
@@ -293,11 +317,14 @@ a{
 .footer{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  justify-content: space-between;
+  margin: 40px;
+  
+  
 }
 
 footer{
   background: rgb(243, 237, 225);
+  margin: -15px;
 }
 
   
@@ -307,7 +334,7 @@ footer{
 
 /* Media Q */
 
-@media screen and (max-width: 1439px) {
+@media screen and (max-width: 1024px) {
 
   .nav2{
     display: inline-block;
@@ -315,6 +342,9 @@ footer{
   }
   
   .boxes{
+    display: inline-block;
+  }
+  .maincontainer{
     display: inline-block;
   }
  
