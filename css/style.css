@@ -10,9 +10,9 @@
 
 body{
  
-  min-height: 100%;
-  max-width: 2480px;
-  min-width: 1024px;
+  
+  max-width: 2400px;
+  
   margin-left: 1%;
   overflow-x: hidden;
   
@@ -34,8 +34,8 @@ body{
   word-spacing: 5rem;
   justify-content: space-between;
   font-size: 20px;
-  margin-right: 13rem;
-  min-width: 1024px;
+  margin-right: 9rem;
+  min-width: 500px;
  } 
  .headeRR li{
    list-style: none;
@@ -46,9 +46,17 @@ body{
    color: rgb(104, 104, 235);
    font-weight: 100;
  }
+ #accomodation:hover{
+  color:rgb(58, 109, 128);
+  border-bottom: goldenrod 4px dotted;
+ }
  #activity{
-   color: rgb(145, 131, 131);
-   font-weight: 300;
+   color: rgb(201, 162, 162);
+   font-size: 300;
+ }
+ #activity:hover{
+  color:lightblue;
+  border-bottom: goldenrod 4px dotted;
  }
  #signup{
    color: rgb(45, 45, 231);
@@ -180,9 +188,12 @@ a{
 
 
 
-.boxes{
+#boxes{
   display: grid;
   grid-template: repeat(2, 1fr) / repeat(3, 1fr);
+  
+  
+  
   
   
  
@@ -193,11 +204,13 @@ a{
 .box{
   background:rgb(253, 251, 251);
   text-align: left;
-  padding: 1.3rem 1.3rem;
+  padding: 1.5rem 1.5rem;
   height: 13rem;
+  width: 15rem;
   margin: 20px;
   border-radius: 25px;
   box-shadow: 1px 2px 1px #796e6e;
+  
   
 }
 .box p{
@@ -211,10 +224,11 @@ a{
 
 
 .box img{
-  height: 150px;
-  width: 250px;
-  margin: -15px;
+  height: 80%;
+  width: 115%;
+  margin: -18px;
   border-radius: 20px 20px 0 0;
+  object-fit: cover;
   
 }
 
@@ -229,6 +243,7 @@ a{
 }
 .boxes2{
   width: 450px;
+  
   
   
   
@@ -269,16 +284,24 @@ a{
     
     background-color: rgb(235, 235, 235);
     margin: 10px;
-    padding: 40px;
+    padding-right: -1fr;
     border-radius: 15px;
     margin-right: 12rem;
+    display: grid;
+    grid-template-columns: repeat( minmax(300px, 1fr));
+    
+    
 }
 .maincombination2{
     
     background-color: rgb(235, 235, 235);
     margin: 0.5%;
+    width: 85%;
     padding: 10px;
     border-radius: 15px;
+    display: grid;
+    grid-template-rows: 75px repeat(auto-fit, minmax(50px 230px)) auto;
+    
     
     
     
@@ -297,18 +320,17 @@ a{
 }
 
 .maincontainer{
-  display: flex;
-  margin-left: -20px;
-  padding: 10px;
-  overflow-x: unset;
-  padding-right: 12%;
+  display: grid;
+  grid-template-columns: 70% 30%;
+  
+  
 }
 
 
 
 .activities{
   display: grid;
-  grid-template: repeat(2, 30rem) / repeat(4, 30rem);
+  grid-template-rows: repeat(2, minmax(500px, 300px)); 
   grid-template-areas: 
        "a b d e" 
        ". c . f";    
@@ -325,27 +347,27 @@ a{
 }      
 .activities div:nth-of-type(2){
   grid-area: b;
-  margin-left: -3rem;
+  
 }
 .activities div:nth-of-type(3){
   grid-area: c;
   margin-top: -12rem;
-  margin-left: -3rem;
+  
   
 }
 .activities div:nth-of-type(4){
   grid-area: d;
-  margin-left: -6rem;
+  
 }
 .activities div:nth-of-type(5){
   grid-area: e;
-  margin-left: -7rem;
+  
   
 }
 .activities div:nth-of-type(6){
   grid-area: f;
   margin-top: -12rem;
-  margin-left: -7rem;
+  
 }
 
 
@@ -359,13 +381,13 @@ a{
   
 }
  .boxes3{
-  width: 68%;
-  height: 58%;
+  width: 80%;
+  height: 56%;
   
   
 }
 .boxes4{
-  width: 70%;
+  width: 80%;
   height: 118%;
   
   
@@ -431,7 +453,7 @@ a{
 }
 
 footer{
-  background: rgb(243, 237, 225);
+  background: rgb(242, 247, 238);
   margin: -15px;
   padding: 1px;
   margin-top: -11%;
@@ -455,28 +477,110 @@ footer{
 
 /* Media Q */
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 768px) {
 
+  
   .nav2{
     display: inline-block;
+    font-size: 20px;
     
   }
   
   .boxes{
-    display: inline-block;
-  }
-  .maincontainer{
-    display: inline-block;
-  }
-  .activities{
-    display: inline-block;
+    display: grid;
+    grid-template-rows: repeat(6, minmax(200px, 100px));
+    padding: 10px;
+    width: 30rem;
     
-  }
+   }
+   .box{
+    padding: 1.5rem 1.5rem;
+    height: 13rem;
+    width: 15rem;
+    margin: 20px;
+     
+     
+   }
+   
+  
+    
+  
   .footer{
     display: inline-block;
     
   }
  
+}
+
+@media screen and (max-width: 1248px){
+
+  #boxes{
+    display: grid;
+    grid-template-rows: repeat(6, minmax(100px, 200px));
+  }
   
+  .activities {
+    display: grid;
+    grid-template-rows: repeat(6, minmax(100px, 200px));
+    grid-gap: 50px;
+    padding: 10%; 
+    grid-template-areas: 
+    "a"
+    "b"
+    "c"
+    "d"
+    "e"
+    "f";    
+}
+.boxes3{
+  height: 100%;
+
+}
+.boxes4{
   
 }
+
+.activities div:nth-of-type(1){
+grid-area: a;
+height: 15rem;
+}      
+.activities div:nth-of-type(2){
+grid-area: b;
+margin-top: 50px;
+
+}
+.activities div:nth-of-type(3){
+grid-area: c;
+margin-top: 20px;
+
+
+}
+.activities div:nth-of-type(4){
+grid-area: d;
+
+}
+.activities div:nth-of-type(5){
+grid-area: e;
+margin-top: 10px;
+
+}
+.activities div:nth-of-type(6){
+grid-area: f;
+margin-top: 0.5px;
+
+}
+
+}
+
+@media screen and (max-width: 1450px){
+
+  .maincontainer{
+    display: inline-block;
+  }
+
+  
+
+
+}
+
+
