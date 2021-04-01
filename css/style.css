@@ -265,6 +265,11 @@ a{
   text-align: center;
   margin: 20px 0 0 30px
 }
+.description2{
+  text-align: center;
+  margin: 20px 0 0 30px
+
+}
 
 .fa-star {
   color: rgb(240, 221, 221);
@@ -331,6 +336,8 @@ a{
 .activities{
   display: grid;
   grid-template-rows: repeat(2, minmax(500px, 300px)); 
+  
+  
   grid-template-areas: 
        "a b d e" 
        ". c . f";    
@@ -367,6 +374,7 @@ a{
 .activities div:nth-of-type(6){
   grid-area: f;
   margin-top: -12rem;
+  
   
 }
 
@@ -447,6 +455,8 @@ a{
   
   
   
+  
+  
  
   
   
@@ -454,9 +464,10 @@ a{
 
 footer{
   background: rgb(242, 247, 238);
-  margin: -15px;
-  padding: 1px;
-  margin-top: -11%;
+  margin: -20px;
+  padding: 0px;
+  margin-top: -10%;
+  
   
   
   
@@ -486,7 +497,7 @@ footer{
     
   }
   
-  .boxes{
+  #boxes{
     display: grid;
     grid-template-rows: repeat(6, minmax(200px, 100px));
     padding: 10px;
@@ -514,10 +525,7 @@ footer{
 
 @media screen and (max-width: 1248px){
 
-  #boxes{
-    display: grid;
-    grid-template-rows: repeat(6, minmax(100px, 200px));
-  }
+  
   
   .activities {
     display: grid;
@@ -532,13 +540,17 @@ footer{
     "e"
     "f";    
 }
+
 .boxes3{
   height: 100%;
+}
 
-}
 .boxes4{
-  
+  height: 100%;
 }
+
+
+
 
 .activities div:nth-of-type(1){
 grid-area: a;
@@ -572,15 +584,33 @@ margin-top: 0.5px;
 
 }
 
-@media screen and (max-width: 1450px){
+@media screen and (max-width: 1400px){
 
   .maincontainer{
     display: inline-block;
   }
+ 
+  }
 
-  
+ @media screen and (max-width: 400px){
 
-
-}
-
-
+  .box{
+    width: 90%;
+  }
+  .boxes2{
+    width: 100%;
+  }
+  .description{
+    margin-left: 30px;
+  }
+  .description1{
+    margin-left: 100px;
+  }
+  .description2{
+    margin-left: 80px;
+  }
+  .activities{
+    width: 50rem;
+    height: ;
+  }
+ }
