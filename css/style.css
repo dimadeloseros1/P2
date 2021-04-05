@@ -8,15 +8,14 @@
 
 
 
+
 body{
  
   
   max-width: 2400px;
   
   margin-left: 1%;
-  
-  
-  
+  overflow-x: hidden;
   
  }
  
@@ -34,7 +33,7 @@ body{
   justify-content: space-between;
   font-size: 20px;
   margin-right: 9rem;
-  min-width: 500px;
+  
  } 
  .headeRR li{
    list-style: none;
@@ -43,7 +42,7 @@ body{
  }
  #accomodation{
    color: rgb(104, 104, 235);
-   font-weight: 100;
+   font-weight: bold;
  }
  #accomodation:hover{
   color:rgb(58, 109, 128);
@@ -89,7 +88,8 @@ header h1{
 }
 
 #text{
-  font-size: 24px;
+  height: 100%;
+  box-sizing: border-box;
   border-style: solid;
 }
 #button{
@@ -112,13 +112,20 @@ a{
 }
 
 .nav2{
-  display: inline-flex;
+  display: flex;
+  max-width: 700px;
+  
+  
+  
   
 }
 
 .nav2 p{
-  font-weight: 600;
-  margin-top: 30px;
+  font-weight: 200;
+  text-align: right;
+  
+  
+  
 }
 .nav2 i{
   font-size: 1.2rem;
@@ -132,22 +139,26 @@ a{
   border-radius: 20px;
   border-color: rgb(235, 240, 239);
   padding: 0;
-  width: 175px;
-  margin: 20px;
+  width: 100%;
+  
+  margin: 10px;
   
 }
+
+
 
 .nav2 .fas{
 
   background-color: rgb(223, 225, 235);
-  border-radius: 20px;
+  border-radius: 30px;
   padding: 3px;
-  height: 2rem;
-  width: 2rem;
+  height: 40%;
+  width: 25%;
   justify-content: center;
   align-items:center;
   display: inline-flex;
   white-space: nowrap;
+  box-sizing: border-box;
 }
 
 .info{
@@ -189,9 +200,8 @@ a{
 
 #boxes{
   display: grid;
-  grid-template-rows: repeat(3, minmax(250px, 1fr));
+  grid-template-rows: repeat(auto-fit, minmax(250px, 1fr));
   grid-template-columns:  repeat( auto-fit,  minmax(370px, 1fr));
-  
   
   
   
@@ -210,7 +220,7 @@ a{
   text-align: left;
   padding: 5px;
   height: 18rem;
-  width: 22rem;
+  width: 80%;
   margin: 20px;
   border-radius: 25px;
   box-shadow: 1px 2px 1px #796e6e;
@@ -245,21 +255,15 @@ a{
 }
 
 .boxes2 img{
-  height: 200px;
-  width: 175px;
+  
+  width: 30%;
   border-radius: 30px 0 0 30px;
   margin: -10px;
   object-fit: cover;
   
   
 }
-.boxes2{
-  width: 450px;
-  
-  
-  
-  
-}
+
 
 .box2{
   background: rgb(253, 251, 251); 
@@ -300,12 +304,11 @@ a{
 .maincombination{
     
     background-color: rgb(235, 235, 235);
+    margin: 10px;
+    padding-right: -1fr;
     border-radius: 15px;
     margin-right: 5rem;
-    
-    
-    
-    
+    display: grid;
     
     
     
@@ -314,12 +317,11 @@ a{
     
     background-color: rgb(235, 235, 235);
     margin: 0.5%;
-    width: 100%;
+    width: 85%;
     padding: 10px;
     border-radius: 15px;
     display: grid;
-    grid-template-rows: 75px repeat(auto-fit, minmax(50px 230px)) auto;
-    margin-bottom: 100px;
+    grid-template-rows: 75px repeat(auto-fit, minmax(50px 230px)) ;
     
     
     
@@ -329,8 +331,7 @@ a{
 .mp{
   display: flex;
   justify-content: space-around;
-  margin-left: -50px;
-  margin-right: -50px;
+  margin: auto;
  }
   
 .mp i{
@@ -341,21 +342,19 @@ a{
 .maincontainer{
   display: grid;
   grid-template-columns: 73% 30%;
-  
-  
-  
 }
 
 
 
 .activities{
   display: grid;
-  grid-template-rows: repeat(2, minmax(500px, 300px)); 
+  grid-template-rows: repeat(auto-fit, minmax(100px, 300px)); 
+  grid-gap: 2%;
   
   
   grid-template-areas: 
        "a b d e" 
-       ". c . f";    
+       "a c d f";    
       
       
    
@@ -373,7 +372,7 @@ a{
 }
 .activities div:nth-of-type(3){
   grid-area: c;
-  margin-top: -12rem;
+  
   
   
 }
@@ -388,7 +387,7 @@ a{
 }
 .activities div:nth-of-type(6){
   grid-area: f;
-  margin-top: -12rem;
+  margin: 0;
   
   
 }
@@ -399,19 +398,20 @@ a{
 .activities img{
   width: 100%;
   height: 80%;
+  
   border-radius: 1em 1em 0 0;
   
   
 }
  .boxes3{
   width: 80%;
-  height: 56%;
+  
   
   
 }
 .boxes4{
   width: 80%;
-  height: 118%;
+  
   
   
 }
@@ -479,9 +479,8 @@ a{
 
 footer{
   background: rgb(242, 247, 238);
-  margin: -20px;
   padding: 0px;
-  margin-top: -10%;
+ 
   
   
   
@@ -503,99 +502,19 @@ footer{
 
 /* Media Q */
 
-@media screen and (max-width: 768px) {
 
-  
-  .nav2{
-    display: inline-block;
-    font-size: 20px;
-    
-  }
-  .maincombination{
-    background-color: unset;
-
-  }
-  #boxes{
-    display: grid;
-    grid-template-rows: auto repeat(6, minmax(1px, 1fr))auto;
-    margin-top: 0px;
-    grid-gap: 1%;
-    
-    grid-template-areas: 
-         "a"
-         "b"
-         "c"
-         "d"
-         "e"
-         "f";
-         
-  }
-    #boxes div:nth-of-type(1){
-    grid-area: a;
-    margin-top: px;
-    }      
-    #boxes div:nth-of-type(2){
-    grid-area: b;
-    margin-top: 0px;
-    
-    }
-    #boxes div:nth-of-type(3){
-    grid-area: c;
-    margin-top: 10px;
-    
-    
-    }
-    #boxes div:nth-of-type(4){
-    grid-area: d;
-    
-    
-    }
-    #boxes div:nth-of-type(5){
-    grid-area: e;
-    margin-top: 10px;
-    
-    }
-    #boxes div:nth-of-type(6){
-    grid-area: f;
-    margin-top: px;
-    
-    }
-  .box{
-    height: 50rem ;
-    width: 60rem;
-    font-size: 40px;
-
-  
-
-
-
-   
-   
-   
-  
-    
-  
-  .footer{
-    display: inline-block;
-    
-  }
- 
-}
 
 @media screen and (max-width: 1248px){
 
-  
-    
-        
-    
-
-    
+  body{
+    padding: 0;
+    margin: 0;
   }
+  
   .activities {
     display: grid;
-    grid-template-rows: repeat(minmax, minmax(100px, 200px));
+    grid-template-rows: repeat(auto-fit, minmax(100px, 200px));
     grid-gap: 50px;
-    margin: 0 0 12% 35%;
     grid-template-areas: 
     "a"
     "b"
@@ -604,92 +523,158 @@ footer{
     "e"
     "f";    
 }
-
-.boxes3{
-  height: 100%;
-}
-
-.boxes4{
-  height: 100%;
-}
-
-.boxes4 img{
-  height: 80%;
+.activities img{
+  height: 100%
 }
 
 
+
+
+
+.maincontainer{
+  display: flex;
+  flex-direction: column;
+  
+}
 
 
 .activities div:nth-of-type(1){
 grid-area: a;
-margin-top: 0px;
+margin: auto;
 }      
 .activities div:nth-of-type(2){
 grid-area: b;
-margin-top: 20px;
+margin: auto;
+
 
 }
 .activities div:nth-of-type(3){
 grid-area: c;
-margin-top: 20px;
+margin: auto;
 
 
 }
 .activities div:nth-of-type(4){
 grid-area: d;
+margin: auto;
 
 
 }
 .activities div:nth-of-type(5){
 grid-area: e;
-margin-top: 10px;
+margin: auto;
 
 }
 .activities div:nth-of-type(6){
 grid-area: f;
-margin-top: 0.5px;
+margin: auto;
+
+}
+.description{
+  margin-left: 30px;
+}
+.description1{
+  margin-left: 100px;
+}
+.description2{
+  margin-left: 80px;
+}
+
+
+
+.nav2{
+  display: inline-block;
+  font-size: 20px;
+  
+}
+
+.maincombination{
+  background-color: unset;
+  width: 100%;
+  margin: 0;
+  
+  
+}
+.maincombination2{
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.boxes2{
+  display: grid;
+  grid-template-rows: auto repeat(3, minmax(100px, 1fr))auto;
+  margin-top: 0px;
+  grid-gap: 1%;
+  
+}
+.box{
+  margin: auto;
+  
+}
+
+#boxes{
+  display: grid;
+  grid-template-rows:  repeat(6, minmax(100px, 1fr)) ;
+  margin: 0;
+  
+  
+  grid-template-areas: 
+       "a"
+       "b"
+       "c"
+       "d"
+       "e"
+       "f";
+       
+}
+  #boxes div:nth-of-type(1){
+  grid-area: a;
+  margin-top: px;
+  }      
+  #boxes div:nth-of-type(2){
+  grid-area: b;
+  margin-top: 0px;
+  
+  }
+  #boxes div:nth-of-type(3){
+  grid-area: c;
+  margin-top: 10px;
+  
+  
+  }
+  #boxes div:nth-of-type(4){
+  grid-area: d;
+  
+  
+  }
+  #boxes div:nth-of-type(5){
+  grid-area: e;
+  margin-top: 10px;
+  
+  }
+  #boxes div:nth-of-type(6){
+  grid-area: f;
+  margin-top: px;
+  
+  }
+
+
+
+
+ 
+ 
+ 
+
+  
+
+.footer{
+  display: inline-block;
+  
+}
 
 }
 
 
-}
 
-@media screen and (max-width: 1670px){
-  
-  .maincontainer{
-    display: flex;
-    flex-direction: column;
-    
-    
-  }
-  
-  
-  
-  
-
-  
-  
-  }
-
- @media screen and (max-width: 450px){
-
-  
-    
-  
-  .description{
-    margin-left: 30px;
-  }
-  .description1{
-    margin-left: 100px;
-  }
-  .description2{
-    margin-left: 80px;
-  }
-  .activities{
-    width: 60rem;
-
-  }
-  .boxes4{
-    height: rem;
-  }
- }
+ 
