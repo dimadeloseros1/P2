@@ -50,7 +50,7 @@ body{
  }
  #activity{
    color: rgb(201, 162, 162);
-   font-size: 300;
+   font-size: 22px;
  }
  #activity:hover{
   color:lightblue;
@@ -139,7 +139,7 @@ a{
 }
 .nav2 p{
   font-weight: 200;
-  text-align: top;
+  
   margin: 10px;
   
   
@@ -327,7 +327,6 @@ a{
     
     background-color: rgb(235, 235, 235);
     margin: 10px;
-    padding-right: -1fr;
     border-radius: 15px;
     margin-right: 5rem;
     display: grid;
@@ -343,7 +342,7 @@ a{
     padding: 10px;
     border-radius: 15px;
     display: grid;
-    grid-template-rows: 75px repeat(auto-fit, minmax(50px 230px)) ;
+    grid-template-rows:  repeat(auto-fit, minmax(50px 230px)) ;
     
     
     
@@ -662,7 +661,7 @@ margin: auto;
 }
   #boxes div:nth-of-type(1){
   grid-area: a;
-  margin-top: px;
+  
   }      
   #boxes div:nth-of-type(2){
   grid-area: b;
@@ -687,7 +686,7 @@ margin: auto;
   }
   #boxes div:nth-of-type(6){
   grid-area: f;
-  margin-top: px;
+ 
   
   }
 
