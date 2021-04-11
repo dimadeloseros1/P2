@@ -341,7 +341,7 @@ a{
     padding: 10px;
     border-radius: 15px;
     display: grid;
-    grid-template-rows:  repeat(auto-fit, minmax(50px 230px)) ;
+    
     
     
     
@@ -412,7 +412,7 @@ a{
 }
 .activities div:nth-of-type(6){
   grid-area: f;
-  margin: 0;
+  
   
   
 }
@@ -422,7 +422,8 @@ a{
 
 .activities img{
   width: 100%;
-  height: 80%;
+  
+  
   
   border-radius: 1em 1em 0 0;
   
@@ -431,6 +432,8 @@ a{
  .boxes3{
   width: 80%;
   cursor: pointer;
+  
+  
   
   
   
@@ -451,6 +454,8 @@ a{
 }
 .boxes3 img{
   object-fit: cover;
+  height: 80%;
+  
   
   
   
@@ -528,6 +533,7 @@ footer p{
   body{
     padding: 0;
     margin: 0;
+    overflow-x: hidden;
   }
 
   
@@ -540,8 +546,9 @@ footer p{
   
   .activities {
     display: grid;
-    grid-template-rows: repeat(auto-fit, minmax(100px, 200px));
+    grid-template-rows: repeat(6, minmax(100px, 300px));
     grid-gap: 30px;
+    margin: 0; 
     
     grid-template-areas: 
     "a"
@@ -549,11 +556,21 @@ footer p{
     "c"
     "d"
     "e"
-    "f";    
+    "f"; 
+    
 }
 
-
-
+.boxes3{
+  height: 100%;
+  
+}
+.boxes4{
+  height: 100%;
+  
+}
+.boxes4 img{
+  height: 80%;
+}
 
 
 
@@ -563,19 +580,20 @@ footer p{
   flex-direction: column;
   
 }
-.activities img{
-  height: 80%;
-}
+
+
 
 
 .activities div:nth-of-type(1){
 grid-area: a;
 margin: auto;
+
+
 }      
 .activities div:nth-of-type(2){
 grid-area: b;
 margin: auto;
-height: 55%;
+
 
 
 
@@ -650,6 +668,7 @@ margin: auto;
   margin: 0;
   
   
+  
   grid-template-areas: 
        "a"
        "b"
@@ -665,7 +684,8 @@ margin: auto;
   }      
   #boxes div:nth-of-type(2){
   grid-area: b;
-  margin-top: 0px;
+  margin-top: 10px;
+  
   
   }
   #boxes div:nth-of-type(3){
@@ -745,6 +765,5 @@ margin: auto;
   }
 
   
-
   
 }
